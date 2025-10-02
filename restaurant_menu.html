@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suzu</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img id="header-img" src="./images/header.png" alt="Suzu logo">
+      <h1>Suzu</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order-form">Order Form</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-items">
+            <article>
+                <h3>Ramen</h3>
+                <img src="https://www.byfood.com/api/public/assets/6289/content" alt="ramen">
+                <p>Delicious pork ramen with egg and scallions.</p>
+                <p class="price">Price: $12.00</p>
+            </article>
+            <article>
+                <h3>Sushi</h3>
+                <img src="https://www.kikkoman.eu/fileadmin/_processed_/4/2/csm_sushi-kakkoii_2c56fe3133.webp" alt="sushi">
+                <p>Fresh salmon nigiri and tuna rolls.</p>
+                <p class="price">Price: $15.00</p>
+            </article>
+            <article>
+                <h3>Tempura</h3>
+                <img src="https://www.thespruceeats.com/thmb/CkzlxmRyeK8IUrMrHrbq73RX4g4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/basic-tempura-for-fish-and-seafood-1300531-hero-01-bbd91b4ee23940749fec5ab7693eadcc.jpg" alt="tempura">
+                <p>Crispy shrimp and vegetable tempura.</p>
+                <p class="price">Price: $10.00</p>
+            </article>
+        </div>
+    </section>
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form id="order">
+            <label for="ramen">Ramen:</label>
+            <input type="number" id="ramen" name="ramen" min="0" value="0"><br><br>
+
+            <label for="sushi">Sushi:</label>
+            <input type="number" id="sushi" name="sushi" min="0" value="0"><br><br>
+
+            <label for="tempura">Tempura:</label>
+            <input type="number" id="tempura" name="tempura" min="0" value="0"><br><br>
+
+
+            <div class="divider">
+                <p>Sides:</p>
+                <input type="radio" id="edamame" name="side" value="Edamame">
+                <label for="edamame">Edamame</label>
+
+                <input type="radio" id="miso" name="side" value="Miso Soup">
+                <label for="miso">Miso Soup</label>
+            </div> 
+            <br><br>   
+
+            <div class="divider">
+                <p>Choose a drink:</p>
+                <input type="radio" id="green-tea" name="drink" value="Green Tea">
+                <label for="green-tea">Green Tea</label>
+
+                <input type="radio" id="soda" name="drink" value="Soda">
+                <label for="soda">Soda</label>
+
+                <input type="radio" id="water" name="drink" value="Water">
+                <label for="water">Water</label>
+            </div>
+            <br><br>
+
+            <label for="special">Special Requests:</label><br>
+            <textarea id="special" name="special" rows="4" cols="40"></textarea>
+            <br><br>
+
+            <input type="submit" value="Go To Checkout">
+        </form>
+    </section>
+  </main>
+  <footer>
+    <p>Made with love by @saidaaa</p>
+  </footer>
+</body>
+</html>
